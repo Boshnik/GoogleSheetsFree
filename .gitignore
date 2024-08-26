@@ -1,0 +1,9 @@
+.idea
+config.core.php
+/core/components/googlesheets/vendor/
+/_assets/
+/build/
+/node_modules/
+gulpfile.js
+package.json
+package-lock.json

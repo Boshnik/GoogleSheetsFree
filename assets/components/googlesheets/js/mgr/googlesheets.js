@@ -1,0 +1,1 @@
+var GoogleSheets=function(e){GoogleSheets.superclass.constructor.call(this,e=e||{})};Ext.extend(GoogleSheets,Ext.Component,{page:{},window:{},grid:{},tree:{},panel:{},combo:{},config:{},view:{},utils:{}}),Ext.reg("googlesheets",GoogleSheets),GoogleSheets=new GoogleSheets;

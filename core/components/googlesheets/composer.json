@@ -1,0 +1,34 @@
+{
+  "name": "boshnik/googlesheets",
+  "description": "GoogleSheets",
+  "authors": [
+    {
+      "name": "Aleksandr Huz",
+      "email": "Superboshnik@gmail.com",
+      "homepage": "https://github.com/Boshnik"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "config": {
+    "platform": {
+      "php": "8.0"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "google/apiclient": "^2.16"
+  },
+  "scripts": {
+    "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+  },
+  "extra": {
+    "google/apiclient-services": [
+      "Drive", "Sheets"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Boshnik\\GoogleSheets\\": "src/"
+    }
+  }
+}

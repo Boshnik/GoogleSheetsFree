@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="googlesheets" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="googlesheets"
+       version="1.1">
+
+    <object class="GoogleSheetsExport" table="googlesheets_exports" extends="xPDOSimpleObject">
+        <field key="desc" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="spreadsheet" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="spreadsheet_id" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="range" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="sheet_id" dbtype="varchar" precision="100" phptype="string" null="false" default="0"/>
+        <field key="export_type" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="model_class" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="where" dbtype="text" phptype="string" null="true" default=""/>
+        <field key="fields" dbtype="text" phptype="string" null="true" default=""/>
+        <field key="menuindex" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0"/>
+        <field key="published" dbtype="tinyint" precision="1" phptype="boolean" null="true" default="1"/>
+
+        <index alias="spreadsheet_id" name="spreadsheet_id" primary="false" unique="false" type="BTREE">
+            <column key="spreadsheet_id" length="" collation="A" null="false"/>
+        </index>
+        <index alias="published" name="published" primary="false" unique="false" type="BTREE">
+            <column key="published" length="" collation="A" null="false"/>
+        </index>
+    </object>
+
+</model>
